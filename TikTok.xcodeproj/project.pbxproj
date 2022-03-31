@@ -10,7 +10,6 @@
 		3145748C27F6324D00DBBDD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3145748B27F6324D00DBBDD4 /* AppDelegate.swift */; };
 		3145748E27F6324D00DBBDD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3145748D27F6324D00DBBDD4 /* SceneDelegate.swift */; };
 		3145749027F6324D00DBBDD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3145748F27F6324D00DBBDD4 /* ViewController.swift */; };
-		3145749327F6324D00DBBDD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3145749127F6324D00DBBDD4 /* Main.storyboard */; };
 		3145749527F6324E00DBBDD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3145749427F6324E00DBBDD4 /* Assets.xcassets */; };
 		3145749827F6324E00DBBDD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3145749627F6324E00DBBDD4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		3145748B27F6324D00DBBDD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3145748D27F6324D00DBBDD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3145748F27F6324D00DBBDD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3145749227F6324D00DBBDD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3145749427F6324E00DBBDD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3145749727F6324E00DBBDD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3145749927F6324E00DBBDD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				3145748B27F6324D00DBBDD4 /* AppDelegate.swift */,
 				3145748D27F6324D00DBBDD4 /* SceneDelegate.swift */,
 				3145748F27F6324D00DBBDD4 /* ViewController.swift */,
-				3145749127F6324D00DBBDD4 /* Main.storyboard */,
 				3145749427F6324E00DBBDD4 /* Assets.xcassets */,
 				3145749627F6324E00DBBDD4 /* LaunchScreen.storyboard */,
 				3145749927F6324E00DBBDD4 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				3145749827F6324E00DBBDD4 /* LaunchScreen.storyboard in Resources */,
 				3145749527F6324E00DBBDD4 /* Assets.xcassets in Resources */,
-				3145749327F6324D00DBBDD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3145749127F6324D00DBBDD4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3145749227F6324D00DBBDD4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3145749627F6324E00DBBDD4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,11 +277,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TikTok/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TikTok;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +293,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,11 +306,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TikTok/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TikTok;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +322,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
