@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+final class ExploreManager {
+    static let shared = ExploreManager()
+}
